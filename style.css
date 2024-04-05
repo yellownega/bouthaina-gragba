@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&family=Rajdhani:wght@300;400;500;600;700&family=Rubik:wght@300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    transition: 0.3s;
+}
+html{
+    scroll-behavior: smooth;
+}
+*::selection{
+    background-color: #faa307;
+    color: #fff;
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+#btn-menu{
+    display: none;
+}
+#logo {
+    width: max(100px, 10vw);
+    aspect-ratio: 8 / 5;
+    padding: 0.4rem;
+}
+section{
+    padding: 90px 0 45px;
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;    
+    background-color: #ba181b;
+    z-index: 1000;
+}
+header.active{
+    border-bottom: 1px solid #1c1c22;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+header nav .nav-links a{
+    color: #fff;
+    margin-left: 50px;
+    font-size: 25px;
+}
+header nav .nav-links a:hover,
+header nav .nav-links a.active{
+    color: #faa307;{
+}
+}
+.hero{
+    padding-top: 50px 80px;
+    background: url(hero-bg.png); 
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.hero .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero .content h4{
+    color: #faa307;  
+    font-size: 25px;
+}
+.hero .content h1{
+    font-size: 55px;
+    color: #fff;
+    margin: 20px 0 10px;
+}
+.hero .content p{
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 70px;
+}
+.btn{
+    padding: 15px 30px;
+    color: #1c1c22;
+    font-weight: 500;
+    background-color: #faa307;
+    border-radius: 10px;
+    border: 1px solid #faa307;
+    font-size: 18px;
+}
+.btn:hover{
+    color: #faa307;
+    background-color: #fff;
+}
+.hero .heroimg img{
+    border-radius: 60px;
+    margin-top: 20px;
+}
+/* starting sur MOI*/
+.about .container{
+    display: flex;
+    justify-content: center;
+}
+.about .about-image img{
+    width: 420px;
+    height: 500px;
+    border-radius: 10px;
+}
+.about .content{
+    padding-left: 30px;
+}
+.about .content h1{
+    color: #1c1c22;
+    font-size: 45px;
+}
+.about .content h1 span{
+    color: #faa307;
+}
+.about .content h3{
+    color: #1c1c22;
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+.about .content p{
+    color: #444;
+    line-height: 2.0;
+    margin-bottom: 70px;
+    font-size: 20px;
+}
+.sec-top{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.sec-top h1{
+    color: #1c1c22;
+    font-size: 40px;
+}
+.sec-top h1 span{
+    color: #faa307;
+}
+.boxs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.boxs .box{
+    width: 30%;
+}
+.services{
+    background-color: #f0f4f9;
+    text-align: center;
+}
+.services .boxs .box{
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px 0px rgba(128, 122, 22, 0.2);
+    position: relative;
+    top: 0;
+}
+.services .boxs .box:hover{
+    top: -25px;
+}
+.services .boxs .box i{
+    color: #faa307;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.services .boxs .box h3{
+    color: #1c1c22;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.services .boxs .box p{
+    color: #444;
+    margin-bottom: 50px;
+}
+/* portfolio*/
+.portfolio .boxs .box{
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.portfolio .boxs .box img{
+    width: 100%;
+    height: 300px;
+}
+.portfolio .boxs .box:hover img{
+    transform: scale(1.2);
+    rotate: -4deg;
+    transition: 0.6 ease;
+}
+.portfolio .boxs .box .class-hover{
+    position: absolute;
+    left: 0;
+    bottom: auto;
+    width: 100%;
+    height: 310px;
+    background-color: #111111b9;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    opacity: 0;
+}
+.portfolio .boxs .box:hover .class-hover{
+    opacity: 1; 
+}
+.portfolio .boxs .box .class-hover span{
+    color: #fff;
+    font-size: 20px;
+}
+.contact{
+    background-color: #f0f4f9;
+}
+.contact form{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contact form input{
+    width: 45%;
+    font-size: 18px;
+    padding: 15px 10px;
+    outline: none;
+    border: 1px solid rgba(128, 112, 22, 0.3);
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.contact form textarea{
+    border: 1px solid rgba(128, 112, 22, 0.3);
+    outline: none;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+}
+.contact form textarea:focus,
+.contact form input:focus{
+    border-color: #faa307;
+}
+.contact form button{
+    margin: 40px auto 0;
+    cursor: pointer;
+}
+@media(max-width:1200px) {
+    .container{
+        width:90%;
+    }
+    .hero .content h1{
+        font-size: 45px;
+    }
+    .hero .content p{
+        font-size: 20px;
+    }
+    .hero .heroimg img{
+        width: 380px;
+    }
+    .hero{
+        padding-bottom: 40px;
+    }
+    .about .content p{
+        font-size: 20px;
+    }
+    .about .content h1{
+        font-size: 50px;
+    }
+    .contact form{
+        width: 70%;
+    }
+}
+@media(max-width:930px){
+    .hero .content h1{
+        font-size: 40px;
+    }
+    .hero .content p{
+        font-size: 18px;
+    }
+    .hero .heroimg img{
+        width: 340px;
+    }
+    .about .container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .about .about-image img{
+        width: 500px;
+        margin-bottom: 50px;
+    }
+    .boxs .box{
+        width: 45%;
+        margin-bottom: 40px;
+    }
+    .contact form{
+        width: 80%;
+    }
+}
+@media(max-width:710px){
+    .hero .container {
+        flex-direction: column-reverse; 
+    }
+    .hero .heroimg img{
+        width: 360px;
+    }
+    .hero .content h1{
+        font-size: 40px;
+    }
+    .hero .content h4{
+        font-size: 20px;
+    }
+    .hero .content{
+        margin-top: 40px;
+        text-align: center;
+    }
+    .btn{
+        padding: 12px 25px;
+    }
+    .about .about-image img{
+        width: 400px;
+    }
+    #btn-menu{
+        display: block;
+        color: #fff;
+        font-size: 40px;
+    }
+    .boxs{
+        justify-content: center;
+    }
+    .boxs .box{
+        width: 70%;
+    }
+    .contact form{
+        width: 80%;
+    }
+    header nav .nav-links{
+        position: absolute;
+        top: -350px;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: #1c1c22;
+        opacity: calc(0.95);
+    }
+    header nav .nav-links.active{
+        top: 100%;
+    }
+    header nav .nav-links a{
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+        border-bottom: 1px solid #444;
+    }
+    header nav .nav-links a.active,
+    header nav .nav-links a:hover{
+        background-color: #faa307;
+        color:#1c1c22;
+    }
+}
+@media(max-width:620px){
+    .hero .heroimg img{
+        width: 320px;
+    }
+    .hero .content h1{
+        font-size: 35px;
+    }
+    .hero .content{
+        font-size: 12px;
+    }
+    .about .about-image img{
+        width:  320px;
+    }
+    .contact form{
+        width: 90%;
+        justify-content: center;
+    }
+    .contact form input{
+        width: 100%;
+    }
+}
